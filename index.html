@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://algerianmo.com/problems/nt/ -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      تدريب الفريق الجزائري لأولمبياد الرياضيات
+    </title>
+    <meta name="author" content="الفريق الجزائري لأولمبياد الرياضيات">
+    <meta name="keywords" content="أولمبياد الرياضيات, أولمبياد الرياضيات الجزائر, imo, international mathematical olympiad">
+    <meta name="description" content="موقع تفاعلي لتدريب الطلاب الجزائريين لأولمبياد الرياضيات">  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./favicon.ico">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+      function convert() {
+        var input = document.getElementById("MathInput"). value.trim();
+        output = document.getElementById('MathOutput');
+        output.innerHTML = input;
+        MathJax.texReset();
+        MathJax.typesetClear();
+        MathJax.typesetPromise()
+        .catch(function (err) {
+          //
+          //  If there was an internal error, put the message into the output instead
+          //
+          output.innerHTML = '';
+          output.appendChild(document.createElement('pre')).appendChild(document.createTextNode(err.message));
+        })
+        .then(function() {});
+      }
+    </script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body class="dark">
+  <div class="container my-4 my-md-5">
+    <img style="width:40%;padding-right: 30%;" src="./logo.png" alt="AMO">
+    <h1 style="text-align: center;">تدريب الفريق الجزائري لأولمبياد الرياضيات</h1>
+    <h2 style="text-align: center;">Emergency website (Not official)</h2>
+    <p style="text-align: center;">
+      <a style="margin:5px;background-color: green; padding: 5px;border-radius: 5px;font-size: 20px;" href="./basics.html">الأساسيات</a>
+      <a style="margin:5px;background-color: darkcyan; padding: 5px;border-radius: 5px;font-size: 20px;" href="./algebra.html">الجبر</a>
+      <a style="margin:5px;background-color: darkred; padding: 5px;border-radius: 5px;font-size: 20px;" href="./geometry.html">الهندسة</a>
+      <a style="margin:5px;background-color: darkslateblue; padding: 5px;border-radius: 5px;font-size: 20px;" href="./combinatorics.html">التوفيقات</a>
+      <a style="margin:5px;background-color: darkslategrey; padding: 5px;border-radius: 5px;font-size: 20px;" href="./nt.html">نظريات الأعداد</a>
+
+    </p>
+  </div>
+    
+</body></html>

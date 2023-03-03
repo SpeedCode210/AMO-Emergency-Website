@@ -7,37 +7,28 @@
     <meta name="author" content="الفريق الجزائري لأولمبياد الرياضيات">
     <meta name="keywords" content="أولمبياد الرياضيات, أولمبياد الرياضيات الجزائر, imo, international mathematical olympiad">
     <meta name="description" content="موقع تفاعلي لتدريب الطلاب الجزائريين لأولمبياد الرياضيات">  
-    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="./favicon.ico">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-      };
-      function convert() {
-        var input = document.getElementById("MathInput"). value.trim();
-        output = document.getElementById('MathOutput');
-        output.innerHTML = input;
-        MathJax.texReset();
-        MathJax.typesetClear();
-        MathJax.typesetPromise()
-        .catch(function (err) {
-          //
-          //  If there was an internal error, put the message into the output instead
-          //
-          output.innerHTML = '';
-          output.appendChild(document.createElement('pre')).appendChild(document.createTextNode(err.message));
-        })
-        .then(function() {});
-      }
-    </script>
     <!-- Main CSS -->
     <link rel="stylesheet" href="./style.css">
-  
+    <style>
+      h2{
+        font-size: 15px;
+      }
+      a{
+        margin:5px;
+        background-color: green; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        display: inline-block;
+        width: 120px;
+        transition-duration: 300ms;
+      }
+      a:hover{
+        transform: scale(1.15);
+      }
+    </style>
 </head>
 
 <body class="dark">
@@ -46,11 +37,11 @@
     <h1 style="text-align: center;">تدريب الفريق الجزائري لأولمبياد الرياضيات</h1>
     <h2 style="text-align: center;">Emergency website (Not official)</h2>
     <p style="text-align: center;">
-      <a style="margin:5px;background-color: green; padding: 5px;border-radius: 5px;font-size: 20px;" href="./basics.html">الأساسيات</a>
-      <a style="margin:5px;background-color: darkcyan; padding: 5px;border-radius: 5px;font-size: 20px;" href="./algebra.html">الجبر</a>
-      <a style="margin:5px;background-color: darkred; padding: 5px;border-radius: 5px;font-size: 20px;" href="./geometry.html">الهندسة</a>
-      <a style="margin:5px;background-color: darkslateblue; padding: 5px;border-radius: 5px;font-size: 20px;" href="./combinatorics.html">التوفيقات</a>
-      <a style="margin:5px;background-color: darkslategrey; padding: 5px;border-radius: 5px;font-size: 20px;" href="./nt.html">نظريات الأعداد</a>
+      <a style="" href="./basics.html">الأساسيات</a>
+      <a style="background-color: darkcyan;" href="./algebra.html">الجبر</a>
+      <a style="background-color: darkred;" href="./geometry.html">الهندسة</a>
+      <a style="background-color: darkslateblue;" href="./combinatorics.html">التوفيقات</a>
+      <a style="background-color: darkslategrey;" href="./nt.html">نظريات الأعداد</a>
 
     </p>
   </div>
